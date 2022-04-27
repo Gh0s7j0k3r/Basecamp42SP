@@ -1,0 +1,47 @@
+EX00
+int main(void)
+{
+    ft_putchar('t');
+}
+
+EX01
+int main(void)
+{
+    ft_print_alphabet();
+}
+
+EX02
+int main(void)
+{
+    ft_print_reverse_alphabet();
+}
+
+EX03
+int main(void)
+{
+    ft_print_numbers();
+}
+
+EX04
+int main(void)
+{
+    ft_is_negative();
+}
+
+EX05
+int main (void)
+{
+    ft_print_comb();
+}
+
+EX06
+int main (void)
+{
+    ft_print_comb2();
+}
+
+EX07
+int main (void)
+{
+	ft_putnbr(366);
+}

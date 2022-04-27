@@ -1,0 +1,105 @@
+ex00
+int main (void) 
+{
+    char name[] = "Matheus";
+    char surname[] = "A F Dantas";
+
+    ft_strcpy(name, surname);
+    printf("%s", name);
+    return (0);
+}
+
+ex01
+int main (void) 
+{
+    char name[] = "Bruno";
+    char surname[] = "Luiz Alves";
+
+    ft_strncpy(name, surname, 10);
+    printf("%s", name);
+    return (0);
+}
+
+ex02
+int main (void) 
+{
+    char name[] = "";
+    
+    int x = ft_str_is_alpha(name);
+    printf("%d", x);
+    
+    return (0);
+}
+
+ex03
+int main (void) 
+{
+    char name[] = "1111111111d11111111111111111111";
+
+    ft_str_is_numeric(name);
+	printf("%i", ft_str_is_numeric(name));
+	printf("%s", name);
+    return (0);
+}
+
+ex04
+int main (void) 
+{
+    char name[] = "d4515";
+
+    ft_str_is_lowercase(name);
+	printf("%s", name);
+    return (0);
+}
+
+ex05
+int main (void) 
+{
+    char name[] = "TaY";
+
+    ft_str_is_uppercase(name);
+	printf("%s", name);
+    return (0);
+}
+
+ex06
+#include <stdio.h>
+
+int main (void) 
+{
+    char name[] = "5";
+
+	ft_str_is_printable(name);
+	printf("%i", ft_str_is_printable(name));
+    return (0);
+}
+
+ex07
+int main (void) 
+{
+    char name[] = "o5i caraca";
+
+    ft_strupcase(name);
+    printf("%s", name);
+    return (0);
+}
+
+ex08
+int main (void) 
+{
+    char name[] = "O5I CARACA";
+
+    ft_strlowcase(name);
+    printf("%s", name);
+    return (0);
+}
+
+ex09
+int main (void) 
+{
+    char name[] = "oi, tUDO bem? 42palavras quarenta-e-duas; cinquenta+e+um";
+
+    ft_strcapitalize(name);
+    printf("%s", name);
+    return (0);
+}

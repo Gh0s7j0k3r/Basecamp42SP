@@ -1,0 +1,39 @@
+ex00
+#include <stdio.h>
+int main (void) 
+{
+    char source1[11] = "abcde";
+    char source2[] = "12345";
+    printf("%d", ft_strcmp(source1, source2));
+    return (0);
+}
+
+ex01
+#include <stdio.h>
+int main (void) 
+{
+    char source1[11] = "abcde";
+    char source2[] = "12345";
+    printf("%d", ft_strncmp(source1, source2, 5));
+    return (0);
+}
+
+ex02
+#include <stdio.h>
+int main (void) 
+{
+    char destine[11] = "abcde";
+    char source[] = "12345";
+    ft_strcat(destine, source);
+    printf("%s", destine);
+}
+
+ex03
+#include <stdio.h>
+int main (void) 
+{
+    char destine[11] = "abcde";
+    char source[] = "12345";
+    ft_strncat(destine, source, 4);
+    printf("%s", destine);
+}

@@ -1,0 +1,49 @@
+ex00
+#include <stdio.h>
+int main(void)
+{
+    printf("%d", ft_strlen("-42"));
+}
+
+ex01
+int main(void)
+{
+    ft_putstr("\n");
+}
+
+ex02
+int main(void)
+{
+    ft_putnbr(65);
+}
+
+ex03
+#include <stdio.h>
+int main(void)
+{
+    printf("%d", ft_atoi("\n -+214748ddd3647"));
+}
+
+ex04
+#include <stdio.h>
+#include <unistd.h>
+
+void ft_putnbr_base(int nbr, char *base);
+void ft_putchar(char c);
+
+/*void ft_putchar(char c)
+{
+    write(1, &c, 1);
+}*/
+
+int main()
+{
+    char base[] = "0123456789ABCDEF";
+    int num = 0;
+    //2147483647
+
+    printf("Base     => '%s'\n", base);
+    printf("Número   => %d\n", num);
+    ft_putnbr_base(num, base);
+    ft_putchar('\n');
+}

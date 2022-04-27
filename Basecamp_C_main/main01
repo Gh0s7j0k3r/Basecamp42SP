@@ -1,0 +1,153 @@
+ex00
+#include <stdio.h>
+int main()
+{
+    int    a = 24;
+    
+    printf("Valor antes: %d\n", a);
+    ft_ft(&a);
+    printf("Valor aepois: %d\n", a);
+}
+
+ex01
+#include <stdio.h>
+int        main(void)
+{
+    int a = 999;
+    int *ptr1 = &a;
+    int **ptr2 = &ptr1;
+    int ***ptr3 = &ptr2;
+    int ****ptr4 = &ptr3;
+    int *****ptr5 = &ptr4;
+    int ******ptr6 = &ptr5;
+    int *******ptr7 = &ptr6;
+    int ********ptr8 = &ptr7;
+    int *********ptr9 = &ptr8;
+
+    printf("Antes: %d\n", a);
+    ft_ultimate_ft(ptr9);
+    printf("Depois: %d\n", a);
+}
+ex02
+#include <stdio.h>
+int main()
+{
+    int x = 777;
+    int y = 1024;
+
+    printf("X antes: %d\n", x);
+    printf("Y antes: %d\n", y);
+    ft_swap(&x, &y);
+    printf("\nX depois: %d\n", x);
+    printf("Y depois: %d\n", y);
+    
+}
+
+ex03
+#include <stdio.h>
+int    main()
+{
+    int a = 220;
+    int b = 40;
+    int div = 20;
+    int mod = 40;
+    
+    printf("Valor de a: %d\n" ,a);
+    printf("Valor de b:%d\n" ,b);
+    printf("Valor arbitrário div: %d\n" ,div);
+    printf("Valor arbitrário do mod: %d\n" ,mod);
+    ft_div_mod(a, b, &div, &mod);
+    printf("\nResultado divisão:%d\n" ,div);
+    printf("Resto: %d\n" ,mod);
+}
+
+ex04
+#include <stdio.h>
+int main()
+{
+    int a = 91;
+    int b = 15;
+    
+    ft_ultimate_div_mod(&a, &b);
+    printf("Resultado da divisão: %d\n", a);
+    printf("Resto: %d\n", b);
+}
+
+
+ex05
+int        main(void)
+{
+    char string[] = "lampada";
+    char *ptr = &string[0];
+    
+    ft_putstr(ptr);
+}
+
+ex06
+
+#include <stdio.h>
+int        main(void)
+{
+    char    string[] = "bis";
+    char    *ptr = &string[0];
+    int    tamanho;
+    
+    tamanho = ft_strlen(ptr);
+    printf("Tamanho: %d\n", tamanho);
+}
+
+ex07
+#include <stdio.h>
+
+void    ft_rev_int_tab(int *tab, int size);
+
+int  main(void)
+{
+  int size = 10;
+  int a[size] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+  int *tab = &a[0];
+  
+  printf("Array Inicial -> ");
+  while (i < size)
+  {
+    printf("%i", a[i]);
+  }
+  printf("\n");  
+  ft_rev_int_tab(tab, size);
+  printf("Array Reversa -> ");
+  int i = 0;
+  while (i < size)
+  {
+    printf("%i", a[i]);
+  }
+  printf("\n");  
+  return (0);
+}
+
+EX08
+#include <stdio.h>
+
+void    ft_sort_int_tab(int *tab, int size);
+
+int  main(void)
+{
+  int size = 10;
+  int a[size] = {7, 3, 1, 0, 8, 6, 9, 5, 2, 4};
+  int *tab = &a[0];
+  
+  printf("Array Inicial -> ");
+  while (i < size)
+  {
+    printf("%i", a[i]);
+  }
+  printf("\n");  
+  ft_sort_int_tab(tab, size);
+  printf("Array Organizada -> ");
+  int i = 0;
+  while (i < size)
+  {
+    printf("%i", a[i]);
+  }
+  printf("\n");  
+  return (0);
+}
